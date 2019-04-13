@@ -84,7 +84,14 @@ a:visited {
   color: #3FEEE6;
   text-decoration: none;
 }
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
 
+    text-decoration: none;
+    color: initial;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -105,6 +112,7 @@ a:hover {
   <div class="hero-text">
     <h1 style="font-size:50px">Welcome</h1>
     <h3>This is going to be great</h3>
+	  <a href="http://google.com" class="button">Go to Google</a>
   </div>
 </div>
 		 
