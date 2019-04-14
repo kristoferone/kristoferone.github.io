@@ -12,16 +12,6 @@
     font-style: normal;
 
 }
-$(document).ready(function () {
-        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        if (window.location.hash && isChrome) {
-            setTimeout(function () {
-                var hash = window.location.hash;
-                window.location.hash = "";
-                window.location.hash = hash;
-            }, 300);
-        }
-    });
 a:link, a:visited {
   background-color: #f55861;
   color: grey;
@@ -118,24 +108,26 @@ a:hover {
    </div>
   </div>
 	<div style="text-align:center;padding-top:2em;">
-	<a href="#one">Start here</a> 
+	<a href="#one">Use the space bar or arrow keys</a> 
 	</div>
 </section>
 	
-<section id="one;" style="padding:5em 9em;">
-	<a name="one"></a> 
+<section style="padding:5em 9em;">
+	<div>
+		<p class="weepeople">i</p>
+	</div>
   <p>In addition to the mouse,
     <br>you can scroll with the keyboard:
     <br>use the <b>arrow keys</b>,
     <br>the <b>space bar</b>,
     <br>or <b>page up</b> and <b>page down</b>.
   <p class="grey">Multiple key presses will skip multiple slides.
-	  <a href="#two">Click here</a>
+	 
 </section>
 
 <section id="two;" style="text-align:center;padding-top:5em;">
   <p>You can even grab the scroll bar!
-	  <a class="button" href="#three">Click here</a>
+	 
 </section>
 
 <section id="three;" style="width:300px; float:left;">
