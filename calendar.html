@@ -58,7 +58,7 @@ function drawCalendar(dateData){
       var columns = weeksInMonth(d);
       return ((cellSize * columns) + (cellMargin * (columns + 1)));
     })
-    .append("g")
+    <!---.append("g") -->
 
   svg.append("text")
     .attr("class", "month-name")
