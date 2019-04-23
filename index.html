@@ -183,6 +183,21 @@ a:hover {
     <iframe width="1000px" align="center" sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="raw.html" marginwidth="0" marginheight="0" style="height:500px;" scrolling="no"></iframe>
   </div>
 </section>
+
+<section>
+<script type="module">
+  // Load the Observable runtime and inspector.
+  import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
+
+  // Your notebook, compiled as an ES module.
+  import notebook from "https://api.observablehq.com/@kristoferone/zoomable-sunburst.js";
+
+
+  // Load the notebook, observing its cells with a default Inspector
+  // that simply renders the value of each cell into the provided DOM node.
+  Runtime.load(notebook, Inspector.into(document.body));
+</script>
+</section>
 <section style="text-align:center; padding:2em 9em;">
 	<img src="CCFA_RGB_colour_e.svg" "width:400px;" "float:top;">
 								   
