@@ -71,7 +71,7 @@ function drawCalendar(dateData){
     .text(function(d) { return monthName(d); })
 
   var rect = svg.selectAll("rect.day")
-    .data(function(d, i) { return d3.timeDays(d, new Date(d.getFullYear(), d.getMonth(), 1)); })
+    .data(function(d, i) { return d3.timeDays(d, new Date(d.getFullYear(), d.getMonth()+1, 1)); })
     .enter().append("rect")
     .attr("class", "day")
     .attr("width", cellSize)
